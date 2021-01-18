@@ -47,4 +47,4 @@ print(min(my_list))
 print(max(my_list))
 
 # count() -> return how many same data exists in the list
-print(my_list.count(4))
+print(my_list.count(4)) 
