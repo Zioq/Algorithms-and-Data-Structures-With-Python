@@ -7,7 +7,7 @@ my_dic = {'py':'python','rb':'ruby','js':'javascript'}
 for item in my_dic:
     print(item) # only print `key`
  
-print(my_dic.items()) #dict_items([('py', 'python'), ('rb', 'ruby'), ('js', 'javascript')]) -> trun into tuple 
+print(my_dic.items()) #dict_items([('py', 'python'), ('rb', 'ruby'), ('js', 'javascript')]) -> turn into tuple 
 
 for item in my_dic.items():
     print(item)
