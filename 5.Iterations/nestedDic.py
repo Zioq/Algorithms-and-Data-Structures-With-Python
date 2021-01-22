@@ -17,6 +17,8 @@ for dep , emp in phone_num_dic.items():
     department.append(dep)
 
 print(f"All department is dictionary is {department}")
+# All department is dictionary is ['Marketing', 'It']
+
 
 # Get All employee in phone_num_dic
 employee = []
@@ -25,7 +27,7 @@ for dep, emp in phone_num_dic.items():
     for name, phone in emp.items():
         employee.append(name)
 print(f"All Employee is dictionary is {employee}")
-
+#All Employee is dictionary is ['Robert', 'Shawn', 'Bryce', 'Lisa', 'Jason']
 
 ''' Using a list comprehension, get all employee's Name '''
 employees = [list(emp.keys()) for dep, emp in phone_num_dic.items()]
