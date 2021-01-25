@@ -1,4 +1,4 @@
-#Classes and objects - an introductory look
+# Classes and objects - an introductory look
 
 1. Everything in python is an object
    - Strings, Intergers, Lists, Dictionaries, Tuples, Sets, functions etc...
