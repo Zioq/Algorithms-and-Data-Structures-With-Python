@@ -34,7 +34,15 @@ class Student:
             
 
     def add_to_file(self,filename):
-        pass
+        if self.find_in_file(filename):
+            return "Record already exists"
+        else:
+            record_to_add = Student.prep_to_write(self.first_name, self.last_name, self.courses)
+            # Add new student data in txt file
+            with open(file_name, "a+") as to_write:
+                to_write.write(record_to_add+"\n")
+            return "Record Added"
+
 
     @staticmethod #Assign as static method in Class
     def prep_record(line):
@@ -42,6 +50,12 @@ class Student:
         first_name, last_name = line[0].split(",")
         course_details = line[1].rstrip().split(",")
         return first_name, last_name, course_details
+
+    @staticmethod
+    def prep_to_write(first_name, last_name, courses):
+        full_name = first_name +','+ last_name
+        courses = ",".join(courses)
+        return full_name+":"+courses
     
     # method to comparing objects
     def __eq__(self,other):
@@ -60,3 +74,7 @@ class Student:
 file_name = "data.txt"
 robert = Student("robert","han",["python","ruby","javascript"])
 print(robert.find_in_file(file_name))
+print(robert.add_to_file(file_name))
+joe = Student("john", "snow", ["python","ruby","java"])
+print(joe.find_in_file(file_name))
+print(joe.add_to_file(file_name))
