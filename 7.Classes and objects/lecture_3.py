@@ -8,8 +8,6 @@ if __repr__ is defined, and __str__ is not, the object will behave as though __s
 This means, in simple terms: almost every object you implement should have a functional __repr__ that’s usable for understanding the object. Implementing __str__ is optional
 """
 
-
-
 class Student:
 
     def __init__(self, first, last, courses=None ):
