@@ -43,4 +43,23 @@ Observations
 ```
 - sublist is always sorted
 - Numbers in sublist to the left of spot marker always smaller
+- After a fiew iterations, you'll get to this state: Marker moves up one spot and the spot marker will no loger be less than lenghth of array
+```
+
+## Complexity analaysis
+As we ran through each inner loop, we iterated through `n` elements since our list has `n` elements.
+So in terms of complexity we get `n for n` elements(`inner loop`)
+But this only resulted in 1 sorted element out of list.
+In terms of complexity we get `n for n` elements(`inner loop`)
+So we did it again for each of our `n` element(moving the marker by 1)
+Resulting in an outer loop which ran through n elements
+In terms of complexity we get `n for n` element (`inner loop`)
+In terms of complexity we g et `n for n` elements (`outer loop`)
+
+So combined we get `complexity` of n * n, or `O(n^2)`
+```
+But each time in our inner loop we had moved up the spot marker by 1.
+Resulting in n-1 on the second run, and n-2 in the third run and so on
+So why are we still using n(which is whole length of the list)?
+It's becuase when working with complexity you drop the lower order term n-1 becomes n, simply because the higher order terms have more impact. 
 ```
