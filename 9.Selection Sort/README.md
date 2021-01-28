@@ -48,12 +48,19 @@ Observations
 
 ## Complexity analaysis
 As we ran through each inner loop, we iterated through `n` elements since our list has `n` elements.
+
 So in terms of complexity we get `n for n` elements(`inner loop`)
+
 But this only resulted in 1 sorted element out of list.
+
 In terms of complexity we get `n for n` elements(`inner loop`)
+
 So we did it again for each of our `n` element(moving the marker by 1)
+
 Resulting in an outer loop which ran through n elements
+
 In terms of complexity we get `n for n` element (`inner loop`)
+
 In terms of complexity we g et `n for n` elements (`outer loop`)
 
 So combined we get `complexity` of n * n, or `O(n^2)`
