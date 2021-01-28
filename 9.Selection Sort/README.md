@@ -11,9 +11,9 @@ Selection sort is one of the easiest algorithms to understand. However, there is
 
 **Pros**
 
-1) Selection sort can be good ate checking if everything is already sorted
+1) Selection sort can be good at checking if everything is already sorted
 
-2) It is also good to use when memory space is limited(This is because unlike other sorting algorithms, selection sort doesn't go around swapping thigs until the very end, resulitng in less temporary storage space used)
+2) It is also good to use when memory space is limited(This is because unlike other sorting algorithms, selection sort doesn't go around swapping things until the very end, resulitng in less temporary storage space used)
 
 **Cons**
 
