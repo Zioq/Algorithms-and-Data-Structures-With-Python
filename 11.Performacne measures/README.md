@@ -13,7 +13,7 @@
 
 
 ## How can we get the O(nlog(n)) which is better than O(n^2) ? 
-
+### Answer is "Merge Sort"!
 | Algorithm | Best Case | Average Case | Worse Case |
 |:--- | :--- | :--- | :---|
 | `Bubble Sort` | O(n)    | O(n^2)       | O(n^2)   |
