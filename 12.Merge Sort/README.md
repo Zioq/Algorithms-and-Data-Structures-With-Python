@@ -13,11 +13,11 @@ Devide and conqure, in binary terms, or dividing in half at each step
 
 > Where this approach used?
 
-    - Sorting algorithm
-    - Searching algorithm
-    - Map - directions - take entire travel path, break it down to smaller travel paths and come up with fastest path
-    - Web server load - divide the load into multiple servers and service the requests
+    Sorting algorithm
+    Searching algorithm
+    Map - directions - take entire travel path, break it down to smaller travel paths and come up with fastest path
+    Web server load - divide the load into multiple servers and service the requests
 
 > log2(n) = x 
 
-    - x: Can be expressed as time, or complexity, number of steps/operations
+    x: Can be expressed as time, or complexity, number of steps/operations
