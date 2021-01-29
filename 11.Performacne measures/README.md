@@ -9,4 +9,4 @@
 
 
 ## Big-0 Complexity
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Zioq/Python-Programming-CS-Algorithms-and-Data-Structures/blob/master/11.Performacne%20measures/big-O%20Complexity.png?raw=true) 
