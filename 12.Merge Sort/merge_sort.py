@@ -23,8 +23,8 @@ def merge_sorted(arr1,arr2):
 
 
 # =============== Program Execution ===============
-l1 = [2,4,6,8,11,15,16]
-l2 = [1,3,5,7,8,9,10]
+l1 = [2,4,6,8,10]
+l2 = [1,3,5,7,8,9]
 print(f"Merged list: {merge_sorted(l1, l2)}")
 
 # Steps
