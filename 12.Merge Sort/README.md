@@ -21,3 +21,20 @@ Devide and conqure, in binary terms, or dividing in half at each step
 > log2(n) = x 
 
     x: Can be expressed as time, or complexity, number of steps/operations
+
+> Complexity analysis
+
+    Each level has n operation and we divided our list in two at each step to eventually get down to n lists
+    this results in log(n) total steps
+     
+    ex) 6,8,1,4,10,7,8,9,3,2,5  (total 11 elements)
+        log2(n) steps 
+        log2(11) = 3.45
+        -
+        n operations at each step
+        log(n) total steps
+        n * log(n) = O(n log(n))
+
+    Complexity: O(nlog(n))
+
+
