@@ -26,8 +26,7 @@ def divide_arr(arr):
         l1 = divide_arr(arr[:middle])
         l2 = divide_arr(arr[middle:])
         return merge_sorted(l1, l2)
-
-
+        
 # ================ Program Execution ================
 l = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
 print(divide_arr(l))
