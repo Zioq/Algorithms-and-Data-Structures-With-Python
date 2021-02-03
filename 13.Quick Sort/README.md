@@ -1,10 +1,9 @@
 # Quicksort: fan favorite
 
->  
-    | Algorithm | Best Case | Average Case | Worst Case |
-    |:--- | :--- | :--- | :---|
-    | *`Merge Sort`* | O(nlog(n)) | O(nlog(n))    | O(nlog(n))   |
-    | *`Quick Sort`* | O(nlog(n)) | O(nlog(n))    | O(n^2)   |
+| Algorithm | Best Case | Average Case | Worst Case |
+|:--- | :--- | :--- | :---|
+| *`Merge Sort`* | O(nlog(n)) | O(nlog(n))    | O(nlog(n))   |
+| *`Quick Sort`* | O(nlog(n)) | O(nlog(n))    | O(n^2)   |
 
 Even the worst case in `Quick sort` is much slower than `Merge sort`, `Quick Sort` is preferred. This is because that worst case is very very rare. 
 
