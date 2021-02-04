@@ -1,7 +1,7 @@
 print("Algorithms file loaded")
 
 # Quick Sort Algorithm
-def quicksort(arr):
+def quickSort(arr):
     if len(arr) <  2:
         return arr
     else:
@@ -14,7 +14,7 @@ def quicksort(arr):
                 equal.append(num)
             else:
                 larger.append(num)
-        return quicksort(smaller) + equal + quicksort(larger)
+        return quickSort(smaller) + equal + quickSort(larger)
 
 # Merge Sort Algorithm
 def merge_sorted(arr1,arr2):
@@ -43,3 +43,13 @@ def mergeSort(arr):
         l1 = mergeSort(arr[:middle])
         l2 = mergeSort(arr[middle:])
         return merge_sorted(l1,l2)
+
+# Bubble Sort Algorithm
+def bubbleSort(arr):
+    swap_happened = True
+    while swap_happened:
+        swap_happened = False
+        for num in range(len(arr)-1):
+            if arr[num] > arr[num+1]:
+                swap_happened = True
+                arr[num], arr[num+1] = arr[num+1], arr[num]
