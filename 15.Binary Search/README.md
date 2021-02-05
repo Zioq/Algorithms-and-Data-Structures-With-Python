@@ -12,5 +12,4 @@ To minimizes the number of tries, pick the middle of pages in the book and repea
 
 This binary search algorithm use a `divide-and-conquer` technique, so this performance follows O(log n).
 
-## Binary Seach Algorithm Process Image
-![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/15.Binary%20Search/binary_search.png?raw=true) 
+Unlike other search algorithms, binary search can be used beyond just searching. For example, it allows for set membership testing, finding the largest or smallest value, finding the nearest neighbor of the target value, performing range queries, and more.
