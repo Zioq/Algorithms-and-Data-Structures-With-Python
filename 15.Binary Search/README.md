@@ -11,3 +11,6 @@ This idea very similar to find a page in a book. If we want to find a specific p
 To minimizes the number of tries, pick the middle of pages in the book and repeat that process. 
 
 This binary search algorithm use a `divide-and-conquer` technique, so this performance follows O(log n).
+
+## Binary Seach Algorithm Process Image
+![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/15.Binary%20Search/binary_search.png?raw=true) 
