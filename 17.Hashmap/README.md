@@ -36,3 +36,7 @@ The hash map design will include the following functions:
 ### Hash function 
 Let's say you have a new user to add. The new user-data is consist of Key & Value.
 By using a `Hash function`, you can feed the new user-data and the hash funciton uses the `Key` of the new user-data and gives you some kind of `Integer Output`. This integer output can be used as map to sepecific index.
+
+![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/17.Hashmap/hashfunction.png?raw=true) 
+
+
