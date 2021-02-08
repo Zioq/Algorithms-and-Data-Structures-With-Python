@@ -62,3 +62,4 @@ The `collision` occured when you trying to map a new record to an index where al
 One solution
 >    Create a list at the index and append the new record to the list. So end up you have a list with multiple records
 
+![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/17.Hashmap/collision.png?raw=true) 
