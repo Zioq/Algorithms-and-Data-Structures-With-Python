@@ -12,9 +12,27 @@ Hash maps in Python are implemented throught the built-in `dictionary` data type
 
 ### Hash Table vs Hashmap : Differnece between Has Table and Hashamp in python
 
-
 | **Hash Table** | **Hash map**| 
 |:--- | :--- | 
 |  Synchronized | Non-Synchronized | 
 | Fast | Slow | 
 | Allows one null key and more than one null values | Does not allows null keys or values | 
+
+### More detailed of Hash Map
+In short, `Hash maps` are **Indexed data structures**. A Hash map makes use of a `Hash funciton` to compute an index with a key into an array of buckets or slots. Its value is mapped to the bucket with the corresponding index. The key is ***unique and immutable***. 
+
+Think a hsah map like a cabinet having drawers with labels for the things stored in them. 
+> For example
+    Storing user information-consider email as the key, and we cna map values corresponding to that user such as the first name, last name ... to a bucket. 
+
+The hash map design will include the following functions:
+
+- set_val(key, value): Inserts a key-value pair into the hash map. If the value already exists in the hash map, update the value.
+
+- get_val(key): Returns the value to which the specified key is mapped, or “No record found” if this map contains no mapping for the key.
+
+- delete_val(key): Removes the mapping for the specific key if the hash map contains the mapping for the key.
+
+### Hash function 
+Let's say you have a new user to add. The new user-data is consist of Key & Value.
+By using a `Hash function`, you can feed the new user-data and the hash funciton uses the `Key` of the new user-data and gives you some kind of `Integer Output`. This integer output can be used as map to sepecific index.
