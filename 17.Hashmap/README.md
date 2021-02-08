@@ -42,4 +42,6 @@ By using a `Hash function`, you can feed the new user-data and the hash funciton
 ### Search process using a Hash function.
 Let's say we want find a data which is associated with sepecific email address. By feeding a email address, the hash function would see that this particular key maps index 7. This will be point index 7 in your data structure, and you go to storage in index 7 and you can check key and value of the record in that index, so `values` associated with key `exmaple@example.com` retrieved and returned. 
 
+![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/17.Hashmap/searchfunction.png?raw=true) 
+
 
