@@ -12,7 +12,7 @@ class HashTable:
     def set_val(self, key, value):
         # Create index using a built-in hash function
         # hash function create a very big number which is larger than our list size. So use `%` to get the proper index number.
-        hashed_key = 10 # hash(key) % self.size # Now we have an index of our bucket in this hash table 
+        hashed_key = hash(key) % self.size # Now we have an index of our bucket in this hash table 
         
         # save this reference index in bucket
         bucket = self.hash_table[hashed_key] 
@@ -30,20 +30,34 @@ class HashTable:
             bucket[index] = (key,value)
         else: # key does not exists 
             bucket.append((key, value)) # Save data as a tuple 
-         
-
 
     def get_val(self,key):
-        pass
+        hashed_key = hash(key) % self.size
+        bucket = self.hash_table[hashed_key]
+        found_key = False
+        for index, record in enumerate(bucket):
+            record_key , record_value = record
+            if record_key == key:
+                found_key = True
+                break
+        if found_key:
+            return record_value
+        else:
+            return "No record found with that email address"
 
     def __str__(self):
         #return "Hello"
         return "".join(str(item) for item in self.hash_table)
 
 hash_table = HashTable(256)
-hash_table.set_val('robert@gmail.com', 'some value')
-hash_table.set_val('shawn@gmail.com', 'some other value')
+hash_table.set_val('robert@gmail.com', {'first_name': "Robert", "last_name": "Han"})
+hash_table.set_val('shawn@gmail.com', {'first_name': "Shawn", "last_name": "Jeong"})
+hash_table.set_val('jane@gmail.com', {'first_name': "Jane", "last_name": "Richard"})
+hash_table.set_val('tylor@gmail.com', {'first_name': "Tylor", "last_name": "Smith"})
 print(hash_table)
 # update exists data
-hash_table.set_val('shawn@gmail.com', 'updated new value')
-print(hash_table)
+#hash_table.set_val('shawn@gmail.com', 'updated new value')
+
+# Test get.val
+print(hash_table.get_val('robert@gmail.com'))
+print(hash_table.get_val('tylor@gmail.com'))
