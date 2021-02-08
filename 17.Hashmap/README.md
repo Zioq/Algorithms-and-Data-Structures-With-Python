@@ -45,3 +45,20 @@ Let's say we want find a data which is associated with sepecific email address. 
 ![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/17.Hashmap/searchfunction.png?raw=true) 
 
 
+### Complexity
+Hash function -> constant time
+
+Memory index access -> constant time
+
+So,
+`Search Complexity` : O(1)
+
+## Collision
+
+What if you have a new record that has a key returns a integer that has a some index where the index is already occupied?
+This senario called a `Collision` since the index is already occupied.
+The `collision` occured when you trying to map a new record to an index where already occupied. There are few ways to deal with depends on the programming language or your specific implemenation. 
+
+One solution
+>    Create a list at the index and append the new record to the list. So end up you have a list with multiple records
+
