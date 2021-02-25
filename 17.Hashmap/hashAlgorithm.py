@@ -12,20 +12,20 @@ class HashTable:
     def set_val(self, key, value):
         # Create index using a built-in hash function
         # hash function create a very big number which is larger than our list size. So use `%` to get the proper index number.
-        hashed_key = hash(key) % self.size # Now we have an index of our bucket in this hash table 
+        hashed_index = hash(key) % self.size # Now we have an index of our bucket in this hash table 
         
-        # save this reference index in bucket
-        bucket = self.hash_table[hashed_key] 
-
+        # save this reference index(hashed_index) in `bucket` variable
+        bucket = self.hash_table[hashed_index] 
         # so our `bucket` variable simply be used to point to the bucket that was chosen to add a record 
 
-        # process of collision
-        found_key = False
+        # Process of add new data/ update data 
+        # Set the flag 
+        found_key = False 
         for index, record in enumerate(bucket):
-            record_key , record_value = record
-            if record_key == key:
+            record_key , record_value = record # break tuble
+            if record_key == key: ## If same
                 found_key = True
-                break
+                break # Return index where the record exists.
         if found_key: # key exists
             bucket[index] = (key,value)
         else: # key does not exists 

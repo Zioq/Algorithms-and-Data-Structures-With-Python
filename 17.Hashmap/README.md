@@ -23,7 +23,7 @@ In short, `Hash maps` are **Indexed data structures**. A Hash map makes use of a
 
 Think a hsah map like a cabinet having drawers with labels for the things stored in them. 
 > For example
-    Storing user information-consider email as the key, and we cna map values corresponding to that user such as the first name, last name ... to a bucket. 
+    Storing user information-consider email as the key, and we can map values corresponding to that user such as the first name, last name ... to a bucket. 
 
 The hash map design will include the following functions:
 
