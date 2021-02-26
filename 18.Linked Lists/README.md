@@ -44,4 +44,6 @@ This is a singly linked list where the nodes are pointing one direction. Staring
 - O(n) - if you don't track tail, keep track of previous node and current node as you iterate through the list, when you get to current_node.next == None (last node), set the previous node.next = None
 
 ### Some notes on Linked Lists
-* There 
+* There's no random access, ex) you can't jump to the nth element if you choose to unlike an array.
+* Most operation, except for ones that take place with head or tail noes of the list, are sequential.
+* Since there is no predetermined or default size in a list, there is no pre-allocation of memory, and each node can be created and added as necessary.
