@@ -53,3 +53,14 @@ my_list.append_val(node3)
 my_list.append_val(node4)
 my_list.append_val(node5)
 print(my_list)
+
+my_list_2 = LinkedList()
+node_2_1 = Node(5)
+node_2_2 = Node(4)
+node_2_3 = 10
+node_2_4 = 1
+my_list_2.append_val(node_2_1)
+my_list_2.append_val(node_2_2)
+my_list_2.append_val(node_2_3)
+my_list_2.append_val(node_2_4)
+print(my_list_2)
