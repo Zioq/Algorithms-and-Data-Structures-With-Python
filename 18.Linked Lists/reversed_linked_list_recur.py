@@ -46,7 +46,7 @@ class LinkedList:
         # Best Case(When we reached end of our linked list having reversed a pointer)
         # Reached the tail and change that tail's pointer points previous element, not points 'None'
         elif current.next == None: # Reach the tail
-            self.tail = self.head # Set the tail as previous head ! (Set the `5`(which was tail) as `Head`(which is previous head))
+            self.tail = self.head # Set the tail as previous head (Now the previous head element(1) becomes tail)
             current.next = previous # Set the current node point previous node
             self.head = current # Set the current as 'New Head'
         
