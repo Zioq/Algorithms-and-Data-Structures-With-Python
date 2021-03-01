@@ -13,6 +13,7 @@ class Stack:
     def __init__(self):
         ''' Initialize stack with stack pointer '''
         print("Stack created")
+        # Only add stack pointer which is Head
         self.stack_pointer = None
 
     # Push - can only push (add) an item on top of the stack (aka head or stack pointer)
