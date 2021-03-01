@@ -4,7 +4,7 @@
 
 A stack is a data structure that stores items in an Last-In/First-Out manner. This is frequently referred to as LIFO. This is in contrast to a queue, which stores items in a First-In/First-Out (FIFO) manner.
 
-The stack is very similar to Linked lists. It just vertically listed list. 
+The stack is very similar to Linked lists. It just a vertically listed list. 
 ![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/20.Stacks%20and%20Queues/img/stack.png)
 
 The difference with Linked List is that the stack does not have a 'Tail' node. Because in the stack, we don't have to track Tail Node in the stack. 
@@ -50,3 +50,34 @@ IndexError: pop from empty list
 
 ### is_empty
 `is_empty` is a function that to check the stack is empty. That's meaning that the stack pointer points None or Null. - Time compelxity: O(1)
+
+
+## What is a Queue?
+Like stack, queue is a linear data structure that stores items in First In First Out (FIFO) manner. As if waiting in a queue for the movie tickets, the first one to stand in line is the first one to buy a ticket and enjoy the movie.
+
+The stack is very similar to Linked lists.
+![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/20.Stacks%20and%20Queues/img/queue.png)
+
+When use initialize the empty queue, queue's head & tail points None.
+
+## Common operation associated with Queue: Enqueue, Dequeue, Front, Rear
+
+### Enqueue
+Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition – Time Complexity : O(1)
+
+### Dequeue
+Removes an item from the queue's head. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition – Time Complexity : O(1)
+
+**Steps of Remove from head**
+```
+1) Set current node to be head
+2) Make head point to current's next
+3) Make current.next point to None
+4) return current.data
+```
+
+### Front
+Get the front item from queue – Time Complexity : O(1)
+
+### Rear
+Get the last item from queue – Time Complexity : O(1)
