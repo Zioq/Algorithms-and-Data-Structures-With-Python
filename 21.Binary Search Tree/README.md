@@ -30,3 +30,6 @@ In the binary tree, each node can only have max 2 children(left and right)
 **Rules in Binary Tree**
 - Each node on left of current node has to be smaller in value.
 - Each node on right of current node has to be larger in value. 
+- 
+![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/21.Binary%20Search%20Tree/img/BinarySearchTrees.png.jpg)
+>As you can see, the left side of root(50) all nodes' value are less than 50 and the right side of root(50) all nodes' value are larger than 50. 
