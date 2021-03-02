@@ -55,7 +55,7 @@ IndexError: pop from empty list
 ## What is a Queue?
 Like stack, queue is a linear data structure that stores items in First In First Out (FIFO) manner. As if waiting in a queue for the movie tickets, the first one to stand in line is the first one to buy a ticket and enjoy the movie.
 
-The stack is very similar to Linked lists.
+The queue is very similar to Linked lists.
 ![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/20.Stacks%20and%20Queues/img/queue.png)
 
 When use initialize the empty queue, queue's head & tail points None.
