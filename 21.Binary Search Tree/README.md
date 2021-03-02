@@ -33,3 +33,14 @@ In the binary tree, each node can only have max 2 children(left and right)
 - 
 ![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/21.Binary%20Search%20Tree/img/BinarySearchTrees.png)
 >As you can see, the left side of root(50) all nodes' value are less than 50 and the right side of root(50) all nodes' value are larger than 50. 
+
+#### Binay Search Tree(BST) are powerful
+- Search: O(h)
+- Insert: O(h)
+- Delete: O(h)
+- h = Height of the tree
+
+BST' do allow for this to happen 
+> ![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/21.Binary%20Search%20Tree/img/bst.png)
+> It's looks like Lined List. For this reason, O(n) is same with O(h) (h: number of nodes).
+> In such cases: search, insder and delete will al be O(n) which is worst case for BST
