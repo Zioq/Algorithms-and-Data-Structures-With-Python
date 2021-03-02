@@ -22,7 +22,7 @@ class BSTDemo:
         else:
             self._insert(self.root,key)
 
-    # use underscore(_) in fornt of method name to imply private method in ptyon.
+    # use underscore(_) in fornt of method name to imply private method in python.
     def _insert(self, curr, key):
         if key.data > curr.data:
             if curr.right_child == None:
