@@ -35,9 +35,9 @@ In the binary tree, each node can only have max 2 children(left and right)
 >As you can see, the left side of root(50) all nodes' value are less than 50 and the right side of root(50) all nodes' value are larger than 50. 
 
 #### Binay Search Tree(BST) are powerful
-- Search: O(h)
+- Search: O(h), O(long(n)) in balanced trees
 - Insert: O(h)
-- Delete: O(h)
+- Delete: O(h), O(long(n)) in balanced trees
 - h = Height of the tree
 
 BST' do allow for this to happen 
