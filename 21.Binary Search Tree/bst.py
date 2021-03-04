@@ -94,9 +94,11 @@ class BSTDemo:
                 return self._find_val(curr.right_child, key)
         return "Value not found in tree"
 
+    
     def delete_val(self, key):
         self._delete_val(self.root, None, None, key)
-
+    
+    # Delete leaf node 
     def _delete_val(self, curr, prev, is_left, key):
         if curr:
             if key == curr.data:
@@ -111,7 +113,7 @@ class BSTDemo:
                 print("Found node to delete on left side of node")
                 self._delete_val(curr.left_child, curr, True, key)
 
-            else:
+            elif key > curr.data:
                 print("Found node to delete on right side of node")
                 self._delete_val(curr.right_child, curr, False, key)
         else:
