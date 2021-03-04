@@ -49,13 +49,14 @@ class BSTDemo:
             if key == curr.data:
                 if curr.left_child and curr.right_child:
                     print("problem scenario")
+
                 # Set the condition when there is no children.
                 if curr.left_child == None and curr.right_child == None:
                     if is_left:
                         prev.left_child = None
                     else:
                         prev.right_child = None
-
+                
                 elif curr.left_child == None:
                     if prev:
                         if is_left:
