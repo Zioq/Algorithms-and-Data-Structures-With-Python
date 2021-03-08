@@ -1,8 +1,10 @@
+''' Try to remove parents  who has one child'''
+
 class Node:
     def __init__(self, key):
         self.data = key
-        self.left_child = None
         self.right_child = None
+        self.left_child = None
 
 
 class BSTDemo:
@@ -19,12 +21,12 @@ class BSTDemo:
             self._insert(self.root, key)
 
     def _insert(self, curr, key):
-        if key.data > curr.data:
+        if curr.data < key.data:
             if curr.right_child == None:
                 curr.right_child = key
             else:
                 self._insert(curr.right_child, key)
-        elif key.data < curr.data:
+        elif curr.data > key.data:
             if curr.left_child == None:
                 curr.left_child = key
             else:
@@ -43,45 +45,38 @@ class BSTDemo:
     def delete_val(self, key):
         self._delete_val(self.root, None, None, key)
 
-    # Deleting nodes with 1 child node
     def _delete_val(self, curr, prev, is_left, key):
         if curr:
+            # If we want to delete root node which has a childe node, we have to add new condition.
+        
             if key == curr.data:
-                if curr.left_child and curr.right_child:
-                    print("problem scenario")
-
-                # Set the condition when there is no children.
+                # We need to test for how many children current node trying to delete actually has.
                 if curr.left_child == None and curr.right_child == None:
+                # This particular condition work when there is children node .(When you want to delete leaf node)
+                    # Remove the link from the prev(parent) node
                     if is_left:
                         prev.left_child = None
                     else:
                         prev.right_child = None
                 
-                elif curr.left_child == None:
+                elif curr.left_child == None: # When we add F, G and delete F 
+                    # Check for existing previous node
                     if prev:
+                        # check for if the current is left_child of previous or not
                         if is_left:
+                            # current is left child of previous node 
                             prev.left_child = curr.right_child
-                        
-                        else: 
+                        else:
                             prev.right_child = curr.right_child
+                    # if there is no previous, which means root
                     else:
+                        # Make a F as root node
                         self.root = curr.right_child
-                elif curr.right_child == None:
-                    if prev:
-                        if is_left:
-                            prev.left_child = curr.left_child
-                        
-                        else: 
-                            prev.right_child = curr.left_child
-                    else:
-                        self.root = curr.left_child
 
             elif key < curr.data:
                 self._delete_val(curr.left_child, curr, True, key)
-            
             elif key > curr.data:
-                self._delete_val(curr.right_child, curr, False, key)
-
+                self._delete_val(curr.right_child,curr, False, key)
         else:
             print(f"{key} not found in Tree")
 
@@ -90,5 +85,5 @@ tree = BSTDemo()
 tree.insert("F")
 tree.insert("G")
 tree.in_order()
-tree.delete_val("F")
+tree.delete_val("G")
 tree.in_order()
