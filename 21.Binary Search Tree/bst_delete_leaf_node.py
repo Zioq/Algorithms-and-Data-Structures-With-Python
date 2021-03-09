@@ -2,7 +2,7 @@
 The thing we should know about algorithm when we want to delete leaf node. 
 We need to remove a "link from the parent" 
 1) We need to know previous(parents) node of what we wnat to delete.
-2) we need to know which child(left_child or right_childe) we want to delete
+2) we need to know which child(left_child or right_child) we want to delete
 '''
 
 class Node:
