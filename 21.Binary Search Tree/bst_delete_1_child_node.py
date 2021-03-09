@@ -73,6 +73,19 @@ class BSTDemo:
                         # Make a F as root node
                         self.root = curr.right_child
 
+                elif curr.right_child == None: # When we add F, C and delete F 
+                    # Check for existing previous node
+                    if prev:
+                        # check for if the current is left_child of previous or not
+                        if is_left:
+                            prev.left_child = curr.left_child;
+                        else:
+                            prev.right_child = curr.left_child; 
+                    
+                    # if there is no previous, which means root
+                    else:
+                        self.root = curr.left_child
+
             elif key < curr.data:
                 self._delete_val(curr.left_child, curr, True, key)
             elif key > curr.data:
