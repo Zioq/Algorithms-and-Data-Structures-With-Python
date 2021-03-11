@@ -157,7 +157,7 @@ class BSTDemo:
             return 0
         else:
             1 + self._length_of_schdule(curr.left_child) + self._length_of_schdule(curr.right_child)
-
+''' 
 # Test
 data_tree = BSTDemo()
 #data_tree.insert("4:30,30,Price Loader")
@@ -171,4 +171,4 @@ data_tree.in_order()
 start_time = "18:00"
 key_to_find = datetime.strptime(start_time, '%H:%M').time()
 data_tree.delete_val(key_to_find)
-data_tree.in_order()
+data_tree.in_order() '''
