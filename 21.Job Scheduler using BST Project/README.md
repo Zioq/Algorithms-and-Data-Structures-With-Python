@@ -20,3 +20,5 @@ Project using Binary Search Tree as core Data Structure
 - We can traverse the BST easily using in-order-traversal to get a sorted view of our daily scheduled jobs.
 - We can easily add restrictions on the insertion of jobs to the schedule to account for no overlap
 - Insertion, removal, and other operations like a number of jobs, finding a specific job are very fast in a BST.
+
+## Program's Algorithm Work Flowchart
