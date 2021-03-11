@@ -22,3 +22,4 @@ Project using Binary Search Tree as core Data Structure
 - Insertion, removal, and other operations like a number of jobs, finding a specific job are very fast in a BST.
 
 ## Program's Algorithm Work Flowchart
+![alt text](https://github.com/Zioq/Algorithms-and-Data-Structures-With-Python/blob/master/21.Job%20Scheduler%20using%20BST%20Project/img/Program%20Algorithm%20Workflow.png)
