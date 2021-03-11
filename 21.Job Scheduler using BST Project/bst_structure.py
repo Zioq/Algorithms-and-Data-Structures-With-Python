@@ -149,14 +149,14 @@ class BSTDemo:
             print(f"{key} not found in Tree")
 
     # Method to check a length of tree. This will be used to add new job
-    def lenght_of_schedule(self):
-        return _length_of_schdule(self.root)
+    def length(self):
+        return self._length(self.root)
 
-    def _length_of_schdule(self,curr):
+    def _length(self,curr):
         if curr is None:
             return 0
         else:
-            1 + self._length_of_schdule(curr.left_child) + self._length_of_schdule(curr.right_child)
+            return 1 + self._length(curr.left_child) + self._length(curr.right_child)
 ''' 
 # Test
 data_tree = BSTDemo()
