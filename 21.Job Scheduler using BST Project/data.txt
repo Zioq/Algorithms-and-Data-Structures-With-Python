@@ -1,4 +1,3 @@
-4:30,30,Price Loader
 3:00,15,Load Transactions
 8:30,90,Balance Sheet
 1:30,60,Web Refresh

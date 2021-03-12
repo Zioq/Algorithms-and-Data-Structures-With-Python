@@ -30,7 +30,7 @@ def add_new_job():
         else:
             break
     
-    job = input("Enter a new job's name ->")
+    job = input("Enter the name of the job (case sensitive)-> ")
     
     return start_time, duration, job
 
@@ -76,7 +76,32 @@ while True:
 
 
     elif int(choice)  == 3:
-        pass
+        print("You chose `3` to delete a job on the schedule")
+        
+        start_time, duration, job = add_new_job()
+        key_to_find = datetime.strptime(start_time,'%H:%M').time()
+        result = tree.find_val(key_to_find)
+        if result:
+            if result.job == job and result.duration == duration:
+                print("Removing job's detail->")
+                print(result)
+                tree.delete_val(key_to_find)
+                print("The job successfully removed")
+                # Delete job in txt file too
+                with open("data.txt", "r") as f:
+                    lines = f.readlines()
+                with open("data.txt", "w") as f:
+                    for line in lines:
+                        if line.strip("\n") != start_time+","+duration+","+job:
+                            f.write(line)
+                input("Press any key to continue... ")
+            else:
+                print("The name and/or duration of job did not match, delete failed")
+                input("Press any key to continue... ")
+        else:
+            print("Job not found")
+            input("Press any key to continue... ")
+
     elif int(choice) == 4:
         print("Thank you :D bye!")
         break
